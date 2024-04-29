@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Grid */
+    --primary-color: #ff226f;
+    --primary-color-dark: #fe6769;
+   
+    
+    /* Branding */
+    --primary: hsla(400, 83%, 54%, 100%);
+    --primary-hover: hsla(23, 84%, 50%, 100%);
+    --secondary: hsla(211, 100%, 31%, 100%);
+    --secondary-hover: hsla(211, 90%, 21%, 100%);
+    --tertiary: hsla(211, 83%, 54%, 100%);
+    --tertiary-hover: hsla(211, 73%, 44%, 100%);
+    --font-color: #1d1d1d;
+    --secondary-blurred: hsla(211, 100%, 31%, 100%);
+
+    --gray-0: #222222;
+    --gray-1: #666666;
+    --gray-2: #999999;
+    --gray-3: #dadada;
+    --gray-4: #efefef; 
+
+    --white: white;
+    /*typography*/
+    --base-font-size: 20px;
+    --p: 1.618rem;
+    --base-scale:1.618;
+    --base-line-height: calc(1em * var(--base-scale));
+    --h4-font-size: 1rem;
+    --h3-font-size: calc(1rem * var(--base-scale));
+    --h2-font-size: calc(1rem * var(--base-scale) * var(--base-scale));
+    --h1-font-size: calc(1rem * var(--base-scale) * var(--base-scale) * var(--base-scale));
+
+    /* Other */
+    --table-padding: 1.618rem;
+
+   
+    --box-shadw: 10px 10px 5px rgba(0,0,0,.3);
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: "Poppins";
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+.menu{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+.menu-item {
+    display: flex;
+}
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menu-item-text {
+    flex-grow: 1;
+}
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.menu-item-name {
+    margin-right: 1.5em;
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-time-image {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/*-Start of reviews section for homepage*/
+.main-heading{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--white);
+}
+.main-heading-1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #000;
+}
+.normal-heading{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+.normal-heading-1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+}
+#customer-feedback{
+    padding: 10rem 0;
+    background: url('../images/bethanymenu.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+#customer-feedback::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -2;
+}
+
+.customer_cards_container{
+    margin: 4rem 0;
+}
+.customer_card{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: var(--box-shadow); /*make box shadow above*/
+}
+
+/*Start of reviews section for homepage*/
+/*
+old code
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: solid;
+    padding: 3%;
+    margin: 5%;
+    
+}
+/*.column{
+    flex-shrink: 1;
+    border-color: #FF00FF;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    background: grey;
+    padding: .25rem 2rem  .25rem  .25rem;
+    align-self: self-start;  /*isn't going to move other columns up higher, just won't show the blank space within the column/individual boxes
+
+    li{
+    list-style: none;
+}
+
+p{
+    margin: auto;
+    font-style: normal;
+    font-weight: 700;
+    flex-wrap: wrap;
+   
+}
+img{
+    width: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:50%;
+}
+*/
