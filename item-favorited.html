@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu using Html, Css & FlexBox with Responsive</title>
+    <link rel="stylesheet" href="favorited-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<!--<div class="favorited">
+    <div class="favorited-column">
+        <div class="favorited-single-menu">
+            <a href="product.html">
+                <img src="rangoons.jpg" alt="Description of the image">
+              </a>
+            <div class="favorited-menu-content">
+                <h5>Item Favorited <span>$4.45</span></h5>
+            </div>
+        </div>
+    -->
+<div class="favbox">
+    <button type="submit" onclick="openPopup()" class="haert-btn"><img src="heart-small.avif" class="like"></button>
+    <div class="popup" id="popup">
+        <img src="small-heart.jpg" alt="heart">
+        <h2>Favorited!</h2>
+        <p>This item has been favorited</p>
+        <button type="button" onclick="closePopup()"> OK </button>
+    </div>
+</div>
+<script>
+    let popup= document.getElementById("popup");
+    function openPopup(){
+        open-popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        open-popup.classList.remove("open-popup");
+    }
+</script>
+
+</body>
+</html>
+
+
+  
